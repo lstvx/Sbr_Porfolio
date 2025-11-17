@@ -1,0 +1,37 @@
+/* Applique des réglages globaux : supprime marges et paddings par défaut, force la largeur à 100%, définit la couleur de fond et la couleur du texte. */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    color: white;
+}
+
+/* Style de l'en-tête : définit la couleur de fond, la couleur du texte, un padding, centre le texte, prend toute la largeur et utilise box-sizing pour inclure le padding dans la largeur totale. */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Enlève les puces et les marges/paddings par défaut de la liste utilisée pour la navigation. */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Affiche les éléments de la liste côte à côte (inline) et ajoute un espacement horizontal entre eux. */
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Style des liens de navigation : couleur blanche et suppression du soulignement par défaut. */
+nav a {
+  color: white;
+  text-decoration: none;
+}
