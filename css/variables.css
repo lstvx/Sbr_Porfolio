@@ -1,0 +1,33 @@
+:root {
+  --bg: #141414;
+  --text: #ffffff;
+  --muted: #7e7e7e;
+  --border: rgba(89, 0, 255, 0.3);
+  --accent-violet: #9a86f5;
+  --accent-yellow: #ffc400;
+  --accent-green: #00ff15;
+  --card-bg-dark: #111111;
+  --card-bg: #f9fefa00;
+  --radius: 10px;
+  --shadow-sm: 0 0 10px rgba(89, 0, 255, 0.3);
+  --shadow-lg: 0 0 50px rgba(136, 77, 247, 0.3);
+  --index-content-align: normal;
+  --surface-1: #181818;
+  --surface-2: #151515;
+  --surface-border: #202020;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --gap-xs: 6px;
+  --gap-sm: 10px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --purple: #9a86f5;
+  --green: #1fa348;
+  --panel-padding: 18px;
+  --transition: 0.25s cubic-bezier(.4,.0,.2,1);
+}
+
+:root[data-theme="index"] {
+  --index-content-align: center;
+}

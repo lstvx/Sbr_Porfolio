@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/projets.css">
+    <!-- override local pour s'assurer que les fonds blancs deviennent gris sur cette page -->
+    <style>
+        /* cible les cartes et conteneurs de la page projets */
+        main .cards .card,
+        main .cards .click-container,
+        main .cards .card-media-img,
+        main .cards .card-media {
+            background: #2b2b2b !important;
+            /* gris foncé */
+            color: var(--text) !important;
+            border-color: #333 !important;
+        }
+
+        /* tags légèrement plus clairs sur fond gris */
+        main .cards .tag {
+            background: #2f2f2f !important;
+            border-color: #3a3a3a !important;
+            color: var(--text) !important;
+        }
+
+        /* si des .container blancs subsistent dans la page */
+        main .container,
+        main .cards .container {
+            background: #2b2b2b !important;
+            border-color: #333 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h3>Yliass</h3>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+        <label for="nav-toggle" class="nav-icon">☰</label>
+        <nav>
+            <ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="competences.html">Compétences</a></li>
+				<li><a href="experiences.html">Expériences</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Mes Projets</h2>
+        <p class="page-intro">Découvrez une sélection de projets académiques et personnels.</p>
+
+		<div class="cards">
+			<div class="card click-container">
+				<img src="images/epitech.png" alt="Projet Epitech" class="card-media-img">
+				<h3 class="card-title">Shell Unix Personnalisé</h3>
+				<p class="card-text">Implémentation d’un shell Unix avec redirections, pipes et gestion des processus.</p>
+				<div class="tags">
+					<span class="tag">C</span><span class="tag">Unix</span><span class="tag">Shell</span><span class="tag">Système</span>
+				</div>
+			</div>
+			<div class="card click-container">
+				<img src="images/epitech.png" alt="Projet Epitech" class="card-media-img">
+				<h3 class="card-title">Projets Académiques</h3>
+				<p class="card-text">Travaux personnels et scolaires couvrant algorithmie et stack web.</p>
+				<div class="tags">
+					<span class="tag">Python</span><span class="tag">Algo</span><span class="tag">Web</span>
+				</div>
+			</div>
+			<div class="card click-container">
+				<h3 class="card-title">AOTAL — Jeu Roblox</h3>
+				<p class="card-text">Jeu inspiré de l’Attaque des Titans avec mécaniques 3D.</p>
+				<div class="tags">
+					<span class="tag">Roblox</span><span class="tag">Luau</span><span class="tag">Game Dev</span>
+				</div>
+			</div>
+		</div>
+ 	</main>
+
+ 	<footer>
+		<p>&copy; Portfolio</p>
+ 	</footer>
+
+</body>
+
+</html>

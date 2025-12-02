@@ -5,26 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 
 <body>
+
     <header>
-        <h3>Ylssxv</h3>
+        <h3>Yliass</h3>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+        <label for="nav-toggle" class="nav-icon" aria-hidden="true">☰</label>
         <nav>
             <ul>
-                <li>Accueil</li>
-                <li>Compétences</li>
-                <li>Projets</li>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="competences.html">Compétences</a></li>
+				<li><a href="experiences.html">Expériences</a></li>
+				<li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <p>Ceci est ma première page en HTML.</p>
+
+    <main class="main-grid">
+        <section class="grid">
+            <div class="col col-left">
+                <article class="panel profile">
+                    <span class="badge success">Disponible pour des missions</span>
+                    <div class="profile-top">
+                        <img src="images/pfp.png" alt="Photo de profil" class="avatar-xl">
+                        <div class="profile-info">
+                            <h4 class="profile-name">lstvx</h4>
+                            <p class="profile-role">Développeur Roblox (script)</p>
+                            <p class="profile-desc">Passionné par la technologie et le développement, je cherche à m’épanouir dans ce domaine qui constitue aujourd’hui un pilier de notre futur.</p>
+                        </div>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-chip">Anglais & Français</div>
+                        <div class="info-chip">France</div>
+                        <div class="info-chip">UTC+2</div>
+                        <div class="info-chip">Amateur de thé</div>
+                        <div class="info-chip">Développeur</div>
+                        <div class="info-chip">19 ans</div>
+                    </div>
+                    <a href="contact.html" class="btn-wide action-primary" role="button">Me contacter</a>
+                </article>
+
+                <article class="panel skills">
+                    <h4 class="panel-title">Compétences</h4>
+                    <p class="panel-sub">Domaines de mon expertise technique</p>
+                    <ul class="skill-list">
+                        <li class="skill-item">Développement de bots</li>
+                        <li class="skill-item">Design web</li>
+                        <li class="skill-item">Autodidacte</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="col col-middle">
+                <article class="panel stack">
+                    <h4 class="panel-title">Ma Stack Technique</h4>
+                    <p class="panel-sub">Technologies que j’utilise dans mes projets</p>
+                    <div class="stack-grid">
+                        <div class="stack-item">C</div>
+                        <div class="stack-item">Python</div>
+                        <div class="stack-item">LuaC</div>
+                        <div class="stack-item">SQL</div>
+                    </div>
+                </article>
+
+                <article class="panel stats">
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <span class="stat-value">3+</span>
+                            <span class="stat-label">Projets</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label">Entreprises</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2.5</span>
+                            <span class="stat-label">Niveau</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel commission">
+                    <div class="icon-circle">🏢</div>
+                    <h4 class="panel-title center">Confiez-moi un projet</h4>
+                    <p class="panel-sub center">pour donner vie à vos idées</p>
+                    <a href="contact.html" class="btn-mid action-ghost" aria-label="Envoyer un message" role="button">✉</a>
+                </article>
+            </div>
+
+            <div class="col col-right">
+                <article class="panel approach">
+                    <h4 class="panel-title">Mon Approche Professionnelle</h4>
+                    <p class="panel-sub">Ma façon de travailler en contexte d’entreprise</p>
+                    <ol class="approach-list">
+                        <li>
+                            <span class="step-title">Analyse & Compréhension</span><span class="step-index">#1</span>
+                            <p class="step-desc">Étude approfondie des besoins et objectifs.</p>
+                        </li>
+                        <li>
+                            <span class="step-title">Conception & Développement</span><span class="step-index">#2</span>
+                            <p class="step-desc">Mise en œuvre de solutions techniques optimisées.</p>
+                        </li>
+                        <li>
+                            <span class="step-title">Tests & Optimisation</span><span class="step-index">#3</span>
+                            <p class="step-desc">Vérification des performances et de la fiabilité.</p>
+                        </li>
+                        <li>
+                            <span class="step-title">Livraison & Documentation</span><span class="step-index">#4</span>
+                            <p class="step-desc">Documentation claire et suivi post-livraison.</p>
+                        </li>
+                    </ol>
+                </article>
+
+                <article class="panel projects-panel">
+                    <h4 class="panel-title">Projets</h4>
+                    <p class="panel-sub">Quelques projets sur lesquels j’ai travaillé</p>
+                    <div class="icon-circle">📁</div>
+                    <a href="projets.html" class="btn-wide action-primary" role="button">Tous les projets</a>
+                </article>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Mon Portfolio</p>
-    </footer>
+		<p>&copy; Portfolio</p>
+	</footer>
+
 </body>
 
 </html>

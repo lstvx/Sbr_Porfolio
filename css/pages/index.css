@@ -1,0 +1,23 @@
+@import url('../variables.css');
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.subtitle {
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+.description {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}

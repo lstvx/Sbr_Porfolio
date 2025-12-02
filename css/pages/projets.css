@@ -1,0 +1,5 @@
+@import url('../variables.css');
+.cards {
+  max-width: 900px;
+  margin: 0 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+	<header>
+		<h3>Yliass</h3>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+		<label for="nav-toggle" class="nav-icon">☰</label>
+		<nav>
+            <ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="competences.html">Compétences</a></li>
+				<li><a href="experiences.html">Expériences</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="contact-wrap">
+			<article class="contact-card">
+				<h2 class="page-title title-accent">Contact</h2>
+				<p class="page-intro">Envoyez‑moi un message via ce formulaire.</p>
+				<form action="#" method="post" class="simple-form">
+					<label>
+						<span>Nom</span>
+						<input type="text" name="nom" placeholder="Votre nom" required />
+					</label>
+					<label>
+						<span>Email</span>
+						<input type="email" name="email" placeholder="vous@exemple.com" required />
+					</label>
+					<label>
+						<span>Objet</span>
+						<input type="text" name="objet" placeholder="Sujet du message" required />
+					</label>
+					<label>
+						<span>Message</span>
+						<textarea name="message" rows="8" placeholder="Votre message..." required></textarea>
+					</label>
+					<div class="form-actions">
+						<button type="submit" class="btn-wide action-primary">Envoyer</button>
+					</div>
+				</form>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; Portfolio</p>
+	</footer>
+</body>
+</html>
