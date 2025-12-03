@@ -7,38 +7,11 @@
     <title>Projets</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/pages.css">
     <link rel="stylesheet" href="css/pages/projets.css">
-    <!-- override local pour s'assurer que les fonds blancs deviennent gris sur cette page -->
-    <style>
-        /* cible les cartes et conteneurs de la page projets */
-        main .cards .card,
-        main .cards .click-container,
-        main .cards .card-media-img,
-        main .cards .card-media {
-            background: #2b2b2b !important;
-            /* gris foncé */
-            color: var(--text) !important;
-            border-color: #333 !important;
-        }
-
-        /* tags légèrement plus clairs sur fond gris */
-        main .cards .tag {
-            background: #2f2f2f !important;
-            border-color: #3a3a3a !important;
-            color: var(--text) !important;
-        }
-
-        /* si des .container blancs subsistent dans la page */
-        main .container,
-        main .cards .container {
-            background: #2b2b2b !important;
-            border-color: #333 !important;
-        }
-    </style>
 </head>
 
 <body>
-
     <header>
         <h3>Yliass</h3>
         <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
@@ -54,9 +27,13 @@
         </nav>
     </header>
 
-    <main>
-        <h2 class="page-title">Mes Projets</h2>
-        <p class="page-intro">Découvrez une sélection de projets académiques et personnels.</p>
+    <main class="page">
+        <section class="intro-bloc">
+            <h2 class="titre-principal">Mes Projets</h2>
+            <p class="texte-intro">
+                Découvrez une sélection de projets académiques et personnels.
+            </p>
+        </section>
 
 		<div class="cards">
 			<div class="card click-container">

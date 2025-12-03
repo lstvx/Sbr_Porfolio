@@ -1,5 +1,5 @@
 @import url('../variables.css');
-.competences-page {
+.page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px 32px 80px;
@@ -30,7 +30,7 @@
   line-height: 1.5;
   color: var(--muted);
 }
-.section-competence {
+.section-page {
   margin: 0 0 48px 0;
 }
 .section-titre {
@@ -131,7 +131,7 @@
   font-weight: 500;
 }
 @media (max-width: 760px) {
-  .competences-page {
+  .page {
     padding: 20px 20px 72px;
   }
   .titre-principal {
