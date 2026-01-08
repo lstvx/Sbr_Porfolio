@@ -148,3 +148,29 @@
   box-shadow: none;
   min-height: auto;
 }
+.experience-item {
+  background: var(--surface-2);
+  border: 1px solid #1f1f1f;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  transition: background var(--transition), border-color var(--transition);
+}
+.experience-item:hover {
+  background: #1d1d1d;
+  border-color: #2a2a2a;
+}
+.experience-item h3 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+}
+.experience-period {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  color: var(--purple);
+  font-weight: 600;
+}
+.experience-item .text-body {
+  margin: 0;
+  font-size: 13px;
+}
